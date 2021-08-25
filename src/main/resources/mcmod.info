@@ -1,0 +1,18 @@
+[
+  {
+    "modid": "hello-player",
+    "name": "Hello Player",
+    "description": "Greet the player upon logging in",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
+    "url": "",
+    "updateUrl": "",
+    "authorList": [
+      "Death"
+    ],
+    "credits": "",
+    "logoFile": "",
+    "screenshots": [],
+    "dependencies": []
+  }
+]
