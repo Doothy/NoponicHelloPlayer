@@ -17,7 +17,8 @@ import org.apache.logging.log4j.Logger;
         modid = HelloPlayer.MOD_ID,
         name = HelloPlayer.MOD_NAME,
         version = HelloPlayer.VERSION,
-        serverSideOnly = true
+        serverSideOnly = true,
+        acceptableRemoteVersions = "*"
 )
 public class HelloPlayer {
     public static final String MOD_ID = "helloplayer";
