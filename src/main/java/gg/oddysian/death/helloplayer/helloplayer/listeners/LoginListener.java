@@ -4,7 +4,6 @@ import net.minecraft.util.text.TextComponentString;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.PlayerEvent;
-import gg.oddysian.death.helloplayer.helloplayer.util.Scheduler;
 
 public class LoginListener {
     public LoginListener(){
@@ -13,8 +12,8 @@ public class LoginListener {
 
     // On every player login
     @SubscribeEvent
-    public static void onLogin(PlayerEvent.PlayerLoggedInEvent event){
-        Scheduler.runAsyncTimer(event.player.getServer(), 100,1);
+    public void onLogin(PlayerEvent.PlayerLoggedInEvent event){
+        //Scheduler.runAsyncTimer(event.player.getServer(), 100,1); causes crashes
         System.out.println("Login Event triggered!");
         event.player.sendMessage(new TextComponentString("Hello " + event.player.getName()));
     }
